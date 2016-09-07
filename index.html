@@ -25,7 +25,10 @@
     </select>
     <script>
       $(function () {
-        $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"}).change(function(e) {
+        $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"}).change(function() {
+          alert(this.value);
+        });
+        $(".chosen-search input").blur(function() {
           alert(this.value);
         });
       });
