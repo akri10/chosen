@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link href="./css/chosen.min.css" rel="stylesheet"/>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/chosen.jquery.min.js"></script>
+  </head>
+  <body>
+    <select class="chosen-select">
+      <option value="all">All Cities</option>
+      <option class="select-city" value="alexandria">Alexandria, VA</option>
+      <option class="select-hotel" data-city="alexandria" data-hotel-code="wdcal" value="wdcal">Hotel Monaco, Alexandria</option>
+      <option class="select-hotel" data-city="alexandria" data-hotel-code="wdclr" value="wdclr">Lorien Hotel &amp; Spa, Alexandria</option>
+      <option class="select-hotel" data-city="alexandria" data-hotel-code="wdcmr" value="wdcmr">KIMPTON MORRISON HOUSE, Alexandria</option>
+      <option class="select-city" value="chicago">Chicago, IL</option>
+      <option class="select-hotel" data-city="chicago" data-hotel-code="ordtg" value="ordtg">ordtg</option>
+    </select>
+    <script>
+      $(function () {
+        $(".chosen-select").chosen({disable_search_threshold: 10});
+      });
+    </script>
+  </body>
+</html>
