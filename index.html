@@ -9,6 +9,11 @@
     <script src="./js/chosen.jquery.min.js"></script>
   </head>
   <body>
+    <style>
+      .chosen-container {
+        width: 50%;
+      }
+    </style>
     <select class="chosen-select">
       <option value="all">All Cities</option>
       <option class="select-city" value="alexandria">Alexandria, VA</option>
@@ -20,7 +25,7 @@
     </select>
     <script>
       $(function () {
-        $(".chosen-select").chosen({disable_search_threshold: 10});
+        $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
       });
     </script>
   </body>
